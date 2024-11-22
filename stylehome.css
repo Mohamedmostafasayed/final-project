@@ -1,0 +1,333 @@
+:root{
+    --main_color:#133E87;
+    --second-color:#B3C8EA;
+    --third-color:#F5F7FA;
+    --margin:30px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-decoration: none;
+    outline:none;
+    box-sizing: border-box;
+    position: relative;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+    
+}
+img{
+    width: 100%;
+}
+body{
+    max-width: 100svw;
+    height: 100svh;
+    max-height: 100svh;
+    background-image: linear-gradient(to bottom right ,#DBDBDB,#afaeae);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+header{
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container  .logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+header .container .logo-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+header .container .logo-img img{
+    border-radius: 50%;
+}
+header .container nav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header .container .header-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .container .header-btn button{
+    padding: 10px 30px ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .container .header-btn .active{
+    background-color: var(--main_color);
+    color:#fff;
+}
+
+/* end header  */
+.container{
+    margin-left: 30px;
+    margin-right:30px;
+    padding-top: 15px;
+  
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ .main__text__firstdiv{
+    background-color: #C8DFF3;
+    width: 450px;
+    height: 35px;
+    border-radius: 43px;
+}
+ .main__text__firstdiv p{
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  
+}
+
+.main__text__h2{
+    padding: 8px;
+    width: 30%;
+    line-height: 42px;
+    font-size: 45px;
+    margin-top: 6px;
+}
+
+@media (min-width:425px){
+  .Card__infoDoctors{
+    width: 100%;
+   
+  }
+    header .container .header-btn .active{
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width:375px){
+    .Card__infoDoctors{
+        width: 100%;
+
+        
+    }
+    header .container .header-btn .active{
+        width: 150px;
+        font-size: 15px;
+    }
+}
+@media (max-width:1440px){
+    .main__text__h2{
+        width: 100%
+    }
+    .main__img img{
+     
+        display: none;
+    }
+    header .container nav{
+        display: none;
+
+    }
+    header .container{
+        width: 65%;
+    }
+
+    .Card__infoDoctors__Doctors{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+       overflow-x: hidden;
+
+    }
+
+    .Card__infoDoctors{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+ 
+
+}
+
+
+
+.main__text__secondpar {
+    font-size: 18px;
+    padding: 8px;
+    width: 65%;
+    margin-top: 8px;
+}
+
+
+.main__btns{
+    padding: 8px;
+    display: flex;
+    margin-top: 100px;
+}
+.main__btn--blue{
+    background-color: #133E87;
+    padding: 8px;
+    color: white;
+}
+.main__btn--blue i{
+    padding: 2px;
+}
+
+.main__btn--white{
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+.main__btn__blue i{
+    padding: 3px;
+}
+
+.main__img img{
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+
+}
+
+/* second section*/
+.Card__infoDoctors{
+    background-image: linear-gradient(
+    to bottom,
+    #93B0D4 0% 30%,
+    #FFFFFF 50% 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+.Card__infoDoctors__titleP{
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.Card__infoDoctors__Doctors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+.Doctors__Heart{
+width: 350px;
+height: 460px;
+background-image: url(./image/black_and_white_image.jpg);
+background-position: center;
+background-size: cover;
+border-radius: 20px;
+
+display: flex;
+justify-content: start;
+align-items: end;
+}
+
+.Doctors__Heart--items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 14px;
+
+
+}   
+
+
+.Doctors__Women{
+    width: 350px;
+    height: 460px;
+    background-image: url(./image/399493a46f9d0003477ceba0696e8787.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    }
+    
+ .Doctors__Women--items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 14px;
+
+       
+    
+ }
+
+
+    
+.Doctors__Bass{
+    width: 350px;
+    height: 460px;
+    background-image: url(./image/anshu-a-trz15aaL9cE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    }
+    
+    .Doctors__Bass--items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 14px;
+
+    
+    }
+
